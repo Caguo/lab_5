@@ -1,0 +1,25 @@
+/* a. Виводити при друці назву сайту, заголовок та вміст сторінки */
+header, nav, footer {
+   display: none;
+}
+
+/* b. Видалити з виводу всі фонові зображення та кольори */
+* {
+   background: none !important;
+   color: #000 !important;
+}
+
+/* c. Відобразити повний URL взамін гіпертекстових посилань */
+a::after {
+   content: " (" attr(href) ") ";
+}
+
+/* d. Встановити шрифт з засіками для тексту */
+body {
+   font-family: "Times New Roman", Times, serif;
+}
+
+/* e. Встановити поля при друці рівні 50px */
+body {
+   margin: 50px;
+}

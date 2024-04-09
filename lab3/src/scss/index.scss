@@ -41,3 +41,28 @@ h1,h2{
       margin: 20px;
    }
 }
+
+@media screen and (max-width: 768px) {
+   /* a. Перетворення фіксованої ширини відносної */
+   .container {
+       width: 90%;
+   }
+   /* b. Перетворення головного меню на вертикальне */
+   nav ul {
+       display: block;
+       text-align: center;
+   }
+   nav ul li {
+       display: block;
+       margin: 10px 0;
+   }
+   header {
+       padding: 20px 0; /* Збільшення висоти шапки сайту */
+   }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .ie-message {
+       display: block;
+   }
+}
